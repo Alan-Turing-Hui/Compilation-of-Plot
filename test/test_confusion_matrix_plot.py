@@ -1,10 +1,6 @@
 import unittest
 import numpy as np
 from plot.confusion_matrix_plot import ConfusionMatrixPlotter
-import sys
-print(sys.path)
-sys.path.append("/Users/triumph")
-print(sys.path)
 
 class TestConfusionMatrixPlotter(unittest.TestCase):
     def test_plot(self):
@@ -13,7 +9,7 @@ class TestConfusionMatrixPlotter(unittest.TestCase):
         model_name = 'TestModel'
         plotter = ConfusionMatrixPlotter(labels, cm, model_name)
         try:
-            plotter.plot()  # 尝试绘制，这里可以添加更多断言来检查绘图的细节是否正确
+            plotter.plot()  
         except Exception as e:
             self.fail(f"Plotting failed with exception: {e}")
 
