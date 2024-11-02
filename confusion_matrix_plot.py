@@ -59,5 +59,4 @@ class ConfusionMatrixPlotter:
 
         if save_path:
             plt.savefig(save_path)
-        else:
-            plt.show()
+        plt.show()
